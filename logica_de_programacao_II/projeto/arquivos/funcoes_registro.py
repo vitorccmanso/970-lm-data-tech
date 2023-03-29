@@ -1,5 +1,4 @@
-from manipulacao_json import *
-from funcoes_de_busca import *
+from arquivos.funcoes_de_busca import *
 
 #-----Funções que realizam as ações do aplicativo-----#
 
@@ -9,7 +8,7 @@ def registrar_artista():
     artista = buscar_artista(novo_artista)
     if artista == None:
         artistas["artistas"].append({"nome": novo_artista, "albuns": []})
-        salvar_json("jsons/artistas.json", artistas)
+        salvar_json("logica_de_programacao_II/projeto/arquivos/jsons/artistas.json", artistas)
         print(f"O artista '{novo_artista}' foi cadastrado com sucesso!")
         return
     print(f"O artista '{novo_artista}' já está cadastrado no app")
@@ -35,9 +34,9 @@ def registrar_album():
         musicas.append({"nome": nome_musica, "tempo": duracao_musica})
     add_album = {"titulo": nome_album, "artista": artista_existente, "musicas": musicas}
     artistas["artistas"][index]["albuns"].append(nome_album)
-    salvar_json("jsons/artistas.json", artistas)
+    salvar_json("logica_de_programacao_II/projeto/arquivos/jsons/artistas.json", artistas)
     albuns["albuns"].append(add_album)
-    salvar_json("jsons/albuns.json", albuns)
+    salvar_json("logica_de_programacao_II/projeto/arquivos/jsons/albuns.json", albuns)
     print(f"O album '{nome_album}' foi adicionado com sucesso!")
 
 #Cria uma playlist caso ela nao exista, confere se a playlist existe pela função 'buscar playlist'
@@ -48,7 +47,7 @@ def criar_playlist():
         print(f"A playlist '{playlist['nome_playlist']}' já existe")
         return
     playlists["playlists"].append({"nome_playlist": nome_usuario, "musicas": []})
-    salvar_json("jsons/playlists.json", playlists)
+    salvar_json("logica_de_programacao_II/projeto/arquivos/jsons/playlists.json", playlists)
     add_musica(-1, nome_usuario)
     return
 
@@ -72,7 +71,7 @@ def add_musica(index, nome_usuario):
             continue
         musica = ({"nome": musica["nome"], "tempo": musica["tempo"], "artista": busca_artista})
         playlists["playlists"][index]["musicas"].append(musica)
-        salvar_json("jsons/playlists.json", playlists)
+        salvar_json("logica_de_programacao_II/projeto/arquivos/jsons/playlists.json", playlists)
         print(f"Música: {musica['nome']}\nDuração: {musica['tempo']}\nArtista: {busca_artista}")
         while True:
             escolha = input(f"Digite 's' para voltar ao menu de usuário ou 'a' para adicionar outra música na playlist '{nome_usuario}': ")
