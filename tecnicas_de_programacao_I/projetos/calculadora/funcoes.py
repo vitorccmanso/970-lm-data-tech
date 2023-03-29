@@ -11,3 +11,15 @@ def sub(a, b):
         return float(a) - float(b)
     except (ValueError, TypeError):
         raise TypeError("O input 'a' e 'b' devem ser numeros inteiros, ou decimais")
+    
+#Função divisão
+def div(a, b):
+    try:
+        a = float(a)
+        b = float(b)
+    except (ValueError, TypeError):
+        raise TypeError("O input 'a' e 'b' devem ser numeros inteiros, ou decimais")
+    if b != 0:
+        return a / b
+    return("0\nErro: Divisão inválida")
+
