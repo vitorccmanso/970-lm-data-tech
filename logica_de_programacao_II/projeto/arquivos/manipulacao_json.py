@@ -12,7 +12,7 @@ def salvar_json(arquivo, dados):
     with open(arquivo, "w") as s:
         json.dump(dados, s)
 
-#-----Leitura dos arquivos json-----#
-artistas = abrir_json("jsons/artistas.json")
-albuns = abrir_json("jsons/albuns.json")
-playlists = abrir_json("json/playlists.json")
+# -----Leitura dos arquivos json-----#
+artistas = abrir_json("logica_de_programacao_II/projeto/arquivos/jsons/artistas.json")
+albuns = abrir_json("logica_de_programacao_II/projeto/arquivos/jsons/albuns.json")
+playlists = abrir_json("logica_de_programacao_II/projeto/arquivos/jsons/playlists.json")
