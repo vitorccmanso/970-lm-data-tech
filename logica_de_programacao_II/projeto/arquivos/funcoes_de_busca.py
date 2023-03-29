@@ -1,4 +1,4 @@
-from manipulacao_json import *
+from arquivos.manipulacao_json import *
 
 def buscar_artista(nome_artista):
     return next((artista for artista in artistas["artistas"] if artista["nome"].lower() == nome_artista.lower()), None) 
@@ -20,7 +20,7 @@ def buscar_playlist(nome_playlist):
 def buscar_nome_playlist(buscar_nome_playlist):
     playlist = buscar_playlist(buscar_nome_playlist)
     if playlist == None:
-        print(f"A playlist '{playlist['nome_playlist']}' não existe")
+        print(f"A playlist '{buscar_nome_playlist}' não existe")
         return
     print(f"Infomações da playlist '{playlist['nome_playlist']}':")
     for musica in playlist["musicas"]:
