@@ -23,3 +23,10 @@ def div(a, b):
         return a / b
     return("0\nErro: Divisão inválida")
 
+#Função multiplicação
+def multi(a, b):
+    try:
+        return float(a) * float(b)
+    except (ValueError, TypeError):
+        raise TypeError("O input 'a' e 'b' devem ser numeros inteiros, ou decimais")
+
