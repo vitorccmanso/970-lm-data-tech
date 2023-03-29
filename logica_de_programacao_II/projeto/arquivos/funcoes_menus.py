@@ -1,5 +1,5 @@
-from funcoes_registro import *
-from funcoes_de_busca import *
+from arquivos.funcoes_registro import *
+from arquivos.funcoes_de_busca import *
 
 
 #-----Funções dos menus-----#
