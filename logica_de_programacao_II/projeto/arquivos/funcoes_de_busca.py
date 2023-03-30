@@ -44,3 +44,4 @@ def buscar_playlist_artista(artista_nome):
         for musica in playlist['musicas']:
             if musica['artista'].lower() == artista_nome.lower():
                 print(f"Playlist: {playlist['nome_playlist']}\nMúsicas: {playlist['musicas']}\n------------------------")
+                
