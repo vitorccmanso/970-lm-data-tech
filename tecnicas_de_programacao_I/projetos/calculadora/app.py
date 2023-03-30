@@ -1,6 +1,10 @@
 import os
 import sys
-sys.path.insert(0, os.getcwd())
-from tecnicas_de_programacao_I.projetos.calculadora import calcule
 
-print(calcule())
+#Montar o caminho para a pasta calculadora
+path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(path)
+
+#Executa o projeto
+import calculadora
+print(calculadora.calcule())
