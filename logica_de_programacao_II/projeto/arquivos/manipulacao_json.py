@@ -1,4 +1,5 @@
 import json
+import os
 
 #-----Funções para ler e editar os arquivos json-----#
 def abrir_json(arquivo):
@@ -12,7 +13,14 @@ def salvar_json(arquivo, dados):
     with open(arquivo, "w") as s:
         json.dump(dados, s)
 
+# Obter o diretório atual de trabalho
+dir_atual = os.path.dirname(os.path.abspath(__file__))
+caminho_artistas = os.path.join(dir_atual, 'jsons', 'artistas.json')
+caminho_albuns = os.path.join(dir_atual, 'jsons', 'albuns.json')
+caminho_playlists = os.path.join(dir_atual, 'jsons', 'playlists.json')
+
 # -----Leitura dos arquivos json-----#
-artistas = abrir_json("logica_de_programacao_II/projeto/arquivos/jsons/artistas.json")
-albuns = abrir_json("logica_de_programacao_II/projeto/arquivos/jsons/albuns.json")
-playlists = abrir_json("logica_de_programacao_II/projeto/arquivos/jsons/playlists.json")
+artistas = abrir_json(caminho_artistas)
+albuns = abrir_json(caminho_albuns)
+playlists = abrir_json(caminho_playlists)
+
