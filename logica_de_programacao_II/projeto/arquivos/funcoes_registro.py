@@ -83,3 +83,4 @@ def add_musica(index, nome_usuario):
                 continue
             else:
                 break
+            
