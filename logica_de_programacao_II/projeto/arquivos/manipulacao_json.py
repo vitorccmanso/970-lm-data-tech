@@ -24,3 +24,4 @@ artistas = abrir_json(caminho_artistas)
 albuns = abrir_json(caminho_albuns)
 playlists = abrir_json(caminho_playlists)
 
+
