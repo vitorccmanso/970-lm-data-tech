@@ -12,3 +12,5 @@ Descrição: Projetos realizados durante o curso LM Tech Data Talents da ADA em 
  - Calculadora. Para executar esse projeto, nenhum arquivo da pasta "calculadora" devem ser removidos. Só funciona se executar o arquivo "app.py" de dentro da pasta "calculadora" e se os outros 2 arquivos também estiverem lá.
  - Análise Exploratória de Dados utilizando Pandas. Três arquivos CSV foram disponibilizados e o passo a passo do que foi pedido e como foi executado está no notebook. Para executar o notebook da forma correta, a pasta "arquivos" deve conter os três CSV e ela deve estar no mesmo diretório do notebook.
 
+### Projeto Final Módulo 5 - ESTATÍSTICA 2:
+ - Machine Learning, classificação. O grupo escolheu a base de dados e desenvolveu um trabalho completo, realizando toda a EDA, testando modelos, encontrando os melhores hiperparâmetros, realizando engenharia de features, realizando balanceamento de classes e escolhendo o melhor modelo a partir das métricas.
