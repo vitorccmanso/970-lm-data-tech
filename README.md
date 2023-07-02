@@ -11,3 +11,4 @@ Descrição: Projetos realizados durante o curso LM Tech Data Talents da ADA em 
 ### Projetos Módulo 3 - TÉCNICAS DE PROGRAMAÇÃO I (PY):
  - Calculadora. Para executar esse projeto, nenhum arquivo da pasta "calculadora" devem ser removidos. Só funciona se executar o arquivo "app.py" de dentro da pasta "calculadora" e se os outros 2 arquivos também estiverem lá.
  - Análise Exploratória de Dados utilizando Pandas. Três arquivos CSV foram disponibilizados e o passo a passo do que foi pedido e como foi executado está no notebook. Para executar o notebook da forma correta, a pasta "arquivos" deve conter os três CSV e ela deve estar no mesmo diretório do notebook.
+
